@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <========================================links============================================> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/stayel.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+  </head>
+  <body class="position-relative">
+    <main class="d-flex justify-content-center align-items-center">
+      <div
+        class="card w-50 my-5 p-5 gap-3 d-flex justify-content-center align-items-center shadow rounded-0"
+      >
+        <h1>Smart Login System</h1>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter Your Email"
+          class="emailSingnIn"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder=" Enter Your password"
+          class="passSingnIn"
+        />
+        <small class="errorMassige text-danger d-none">Go to sigUp</small>
+        <button
+          id="btnSignin"
+          onclick=" comberData(cardContiner)"
+          class="btnSignin btn btn-main w-100"
+        >
+          Login
+        </button>
+        <span class="text-light">Don’t have an account?</span>
+        <a href="signup.html" class="text-light"> Sign Up</a>
+      </div>
+    </main>
+
+    <div
+      class="layer w-100 d-none text-white position-absolute top-0 bottom-0 flex-column d-flex justify-content-center align-items-center h-100"
+    >
+      <nav
+        class="d-flex justify-content-around shadow mb-5 py-3 position-fixed top-0 start-0 end-0"
+      >
+        <h2 class="h4">SMART LOGIN</h2>
+        <button id="btnLogout" onclick="logOut()" class="btn btnLogout">
+          Logout
+        </button>
+      </nav>
+      <div class="w-50 mt-5">
+        <h3 class="display-2 shadow p-5 mx-3">welcome</h3>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <========================================links============================================> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/stayel.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+  </head>
+  <body class="d-flex justify-content-center align-items-center">
+    <div
+      class="card w-50 my-5 p-5 gap-3 d-flex justify-content-center align-items-center shadow rounded-0"
+    >
+      <h1>Smart Login System</h1>
+      <input
+        type="text"
+        name="yourName"
+        id="yourName"
+        placeholder="Enter Your Name"
+        class="nameInput"
+      />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter Your Email"
+        class="emailInput"
+      />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter Your password"
+        class="passwordInput"
+      />
+      <small class="successText mx-auto text-warning d-none">success</small>
+      <small class="rebeatEmail mx-auto text-danger d-none">
+        email already exists</small
+      >
+      <small class="arrorText mx-auto text-danger d-none"
+        >Your name not true shuode start captal letter and - or{1-10}small
+        letter</small
+      >
+      <small class="arrorEmail mx-auto text-danger d-none"
+        >Your email not true shuode start{a-z or 0-9} and end @gmail.com</small
+      >
+      <small class="arrorpass mx-auto text-danger d-none"
+        >Password at least 8 letter</small
+      >
+      <button class="btnSigUp btn btn-main w-100">Sing Up</button>
+      <span class="text-light">You have an account?</span>
+      <a href="index.html" class="text-light "> Sign In</a>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
